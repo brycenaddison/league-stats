@@ -1,0 +1,16 @@
+services:
+  postgres:
+    build:
+      dockerfile: ./docker/postgres/Dockerfile
+      context: ./
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      PGUSER: docker
+      PGPASSWORD: docker
+  server:
+    build:
+      dockerfile: ./docker/server/Dockerfile
+      context: ./

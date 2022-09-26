@@ -1,0 +1,31 @@
+{
+  "name": "ccs-bot",
+  "version": "1.1.1",
+  "description": "",
+  "main": "src/bot.js",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "axios": "^0.27.2",
+    "discord-api-types": "^0.36.1",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.19.0",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21",
+    "lowdb": "github:dankreiger/lowdb#chore/esm-cjs-hybrid-WITH-LIB",
+    "pg": "^8.7.3",
+    "retry": "^0.13.1"
+  },
+  "scripts": {
+    "start": "node src/bot.js",
+    "deploy-local": "node src/scripts/deploy-commands.js",
+    "deploy-global": "node src/scripts/deploy-commands.js -g"
+  },
+  "author": "Brycen Addison",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.7.1"
+  }
+}

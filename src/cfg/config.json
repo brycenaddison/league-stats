@@ -1,0 +1,67 @@
+{
+    "color": "#0068ff",
+    "commands": {
+        "help": "Opens the help menu.",
+        "code": "Generate tournament codes.",
+        "post": "Post match history results after a series concludes."
+    },
+    "groups": {
+        "plat": ["wed", "thu"]
+    },
+    "seasons": [
+        {
+            "conf": "wed",
+            "name": "Wednesday Platinum",
+            "layout": [
+                {
+                    "startingWeek": 0,
+                    "bestOf": 1
+                },
+                {
+                    "startingWeek": 1,
+                    "bestOf": 3
+                },
+                {
+                    "startingWeek": 8,
+                    "bestOf": 5
+                }
+            ]
+        },
+        {
+            "conf": "thu",
+            "name": "Thursday Platinum",
+            "layout": [
+                {
+                    "startingWeek": 0,
+                    "bestOf": 1
+                },
+                {
+                    "startingWeek": 1,
+                    "bestOf": 3
+                },
+                {
+                    "startingWeek": 8,
+                    "bestOf": 5
+                }
+            ]
+        },
+        {
+            "conf": "fri",
+            "name": "Diamond",
+            "layout": [
+                {
+                    "startingWeek": 0,
+                    "bestOf": 1
+                },
+                {
+                    "startingWeek": 1,
+                    "bestOf": 3
+                },
+                {
+                    "startingWeek": 6,
+                    "bestOf": 5
+                }
+            ]
+        }
+    ]
+}
